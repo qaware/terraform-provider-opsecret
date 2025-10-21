@@ -9,8 +9,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
-
-	"gitlab.com/qaware/internal/projects/qaerp/current/infrastruktur/terraform-provider-onepassword-secret/internal/provider"
+	"github.com/qaware/terraform-provider-opsecret/internal/provider"
 )
 
 var (
@@ -29,10 +28,9 @@ func main() {
 	flag.Parse()
 
 	opts := providerserver.ServeOpts{
-		// TODO: Update this string with the published name of your provider.
 		// Also update the tfplugindocs generate command to either remove the
 		// -provider-name flag or set its value to the updated provider name.
-		Address:         "registry.terraform.io/qaware-internal/onepassword-secret",
+		Address:         "registry.terraform.io/qaware/opsecret",
 		ProtocolVersion: 6,
 		Debug:           debug,
 	}

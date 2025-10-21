@@ -1,4 +1,4 @@
-module gitlab.com/qaware/internal/projects/qaerp/current/infrastruktur/terraform-provider-onepassword-secret
+module github.com/qaware/terraform-provider-opsecret
 
 go 1.23.7
 
