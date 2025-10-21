@@ -67,6 +67,8 @@ resource "whatever" "some_resource" {
 }
 ```
 
+**Note, that references pointing to binary file attachments will be resolved to base64 encoded string contents.**
+
 ## Developing the Provider
 
 If you wish to work on the provider, you'll first need [Go](http://www.golang.org) installed on your machine (see [Requirements](#requirements) above).
