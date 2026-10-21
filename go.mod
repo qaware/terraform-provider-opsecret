@@ -1,6 +1,6 @@
 module github.com/qaware/terraform-provider-opsecret
 
-go 1.23.7
+go 1.26.10
 
 require (
 	github.com/1password/onepassword-sdk-go v0.3.1
